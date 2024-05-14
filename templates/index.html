@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Panel Technologies Inc</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#page-top">
+                        <img width="40px" height="40px" src=" {{url_for('static', filename='assets/favicon.ico') }}">
+                        Panel Technologies Inc.</a>
+                </div>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item "><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item "><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item "><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item "><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+                <video autoplay muted loop playsinline class="back-video">
+                    <source src="{{ url_for('static', filename='assets/plastic_machining.mp4') }}" type="video/mp4">
+                </video>
+            <div class="container px-4 px-lg-5 h-100">
+
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="text-white font-weight-bold">Panel Technologies</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-100">We Manufacture High Quality Components for the Telemetry, Data Communcations, Automotive, Aviation and Transportation Industries</p>
+                        <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Who We are -->
+        <section class="page-section bg-primary" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <!--
+                    <div class="col-md-4 text-center">
+                            <div class="container">
+                            <img class="bodyimage" src="{{ url_for('static', filename='assets/img/pexels-daniel-smyth-10406128.jpg') }}">
+                        </div>
+                    </div>
+                    -->
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Who We Are</h2>
+                        <hr class="divider divider-light" />
+                        <h4 class="text-white-75 mb-4">We're a complete supply chain solution ready to fulfill your manufacturing needs. Whether it's a fighter cockpit display bezel, an engine-transmission adaptor plate, or anything in between, we are ready to meet your unique supply chain requirements with over 30 years in business and decades of experience in precision manufacturing and design services.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- customer service -->
+        <section class="page-section bg-secondary" id="customer-service">
+            <div class="container px-4 px-lg-5 mt-4">
+                <div class="row gx-4 gx-lg-5 justify-content-center text-center">
+                    <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Small-Business Customer Service, International Reach</h2>
+                    <h4 class="text-white-75 mt-4 mb-4">We understand the importance and game-changing difference that close communication, integration, friendly and responsive service can make. With personalized customer service and attention to detail we've built trusting and responsive relationships with customers in both our local area and also around the world.</h4>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img class="bodyimage" src="{{ url_for('static', filename='assets/img/pexels-mike-bird-190574.jpg') }}">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- industries served -->
+        <section class="page-section2 bg-primary" id="industries-served">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-4 text-center">
+                        <img class="bodyimage" src="{{ url_for('static', filename='assets/img/pexels-daniel-smyth-8956313.jpg') }}">
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <div>
+                            <ul>
+                                <li><h2 class="text-white mt-0">We serve multiple industries, including:</h2></li>
+                                <li><h4 class="text-white-75 mb-4">Military and Defense</h4></li>
+                                <li><h4 class="text-white-75 mb-4">Telemetry and Data Communications</h4></li>
+                                <li><h4 class="text-white-75 mb-4">Automotive</h4></li>
+                                <li><h4 class="text-white-75 mb-4">Prototyping and Rapid Manufacturing</h4></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Panel Technologies Advantage-->
+        <section class="page-section2" id="services">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Our Advantage</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">CNC Machining</h3>
+                            <p class="text-muted mb-0">Expert in a range of materials and sizes, we're ready to make your design now</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Plating</h3>
+                            <p class="text-muted mb-0">Anodize, iridite, nickel - We work closely with trusted local vendors to deliver a wide range of finishes at exceptional quality.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Engraving + Backfill</h3>
+                            <p class="text-muted mb-0">We engrave and backfill all materials from stainless to plastic.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Design Services</h3>
+                            <p class="text-muted mb-0">Unique solutions to your unique design requirements. From design to prototyping to production, all under one roof.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Hardware installation</h3>
+                            <p class="text-muted mb-0">We have years of experience installing threaded inserts, PEM fasteners and other assembly requirements</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Painting and Powder Coating</h3>
+                            <p class="text-muted mb-0">We offer tight integration with a local partner to deliver painting, powder coating.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Silk Screening</h3>
+                            <p class="text-muted mb-0">We offer silk screening of text for display panels and insignia etc</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Rapid Turn-Around and JIT Manufacturing</h3>
+                            <p class="text-muted mb-0">By leveraging efficient processes and application-specific fixturing, we're ready to repeat an order at a moment's notice</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RFQ-->
+        <section class="page-section bg-secondary" id="rfq">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Start Working With Us Today</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4">Complete supply chain solutions, tailor made to your unique design requirements. Personalized service. Design Service. Decades of experience in precision manufacturing. Contact us for a quote today.</p>
+                        <a class="btn btn-light btn-xl" href="#contact">Request for Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio-->
+        <section class="page-section bg-primary" id="portfolio">
+        <div>
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="row">
+                        <h1 class="text-center text-white mb-5">Case Studies</h1>
+                        <hr class="divider divider-light"/>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 justify-content-center">
+                                <h5 class="text-white text-center mb-4">Get to know us better by looking at some of our case studies. Common elements of our work include tolerances of 0.005+/- on position and size, routine tolerances of +/-0.0015. Finishes and customer impression is important, most are finished with a fine brush grain finish. Afterwards parts usually are anodize or chemical conversion finished, then painted, powder-coated, and silkscreened. Afterwards, hardware is carefully installed, then packed, labelled, and delivered complete to the customer.</h5>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="static/assets/img/portfolio/fullsize/IMG_0980.jpeg" title="Ruggedized Encoder Chassis">
+                            <img class="img-fluid" src="static/assets/img/portfolio/thumbnails/IMG_0980sm.jpeg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Ruggedized Encoder Chassis</div>
+                                <div class="project-name">Made from solid 6061, this chassis has +/-0.005" tolerances, fins for heat dissipation, anodize with alodine areas for conductivity, locking threaded inserts and much more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="static/assets/img/portfolio/fullsize/IMG_2009.jpeg" title="W-1 Tool Steel Spanner Wrench for 3/8 Socket">
+                            <img class="img-fluid" src="static/assets/img/portfolio/thumbnails/IMG_2009sm.jpeg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">W-1 Tool Steel Spanner Wrench for 3/8 Socket</div>
+                                <div class="project-name">When you can't buy the tool, make it! This wrench head was made from W-1 tool steel, then hardened and tempered for it's long life loosening ER16 collet nuts</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="static/assets/img/portfolio/fullsize/IMG_3802.jpeg" title="Ruggedized 6061 Front Panel">
+                            <img class="img-fluid" src="static/assets/img/portfolio/thumbnails/IMG_3802sm.jpeg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Ruggedized 6061 Front Panel</div>
+                                <div class="project-name">Chassis front panel of solid 6061, featuring +/-0.005 tolerances, afterwards finished with iridite, paint, silkscreen, and hardware installation. Delivered complete.</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="static/assets/img/portfolio/fullsize/IMG_5311.JPG" title="Dovetail Vise Jaws and Vise Body">
+                            <img class="img-fluid" src="static/assets/img/portfolio/thumbnails/IMG_5311sm.JPG" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Dovetail Vise Jaws and Vise Body</div>
+                                <div class="project-name">Bespoke workholding designed in-house and made from 1018 and 4140 steel</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="static/assets/img/portfolio/fullsize/IMG_6092.jpeg" title="Routing 6061 Aluminum Sheet">
+                            <img class="img-fluid" src="static/assets/img/portfolio/thumbnails/IMG_6092sm.jpeg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Routing 6061 Aluminum Sheet</div>
+                                <div class="project-name">With decades of experience routing aluminum sheet, we use precision vacuum workholding and expert methods to deliver what our competition can't</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="static/assets/img/portfolio/fullsize/IMG_8218.jpeg" title="Bespoke 4th Axis Indexing Fixture">
+                            <img class="img-fluid" src="static/assets/img/portfolio/thumbnails/IMG_8218sm.jpeg" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Bespoke 4th Axis Indexing Fixture</div>
+                                <div class="project-name">This bespoke 4th axis indexing fixture paid for itself in a matter of weeks</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Contact Us Today</h2>
+                        <hr class="divider" />
+                        <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
+                    </div>
+                </div>
+<!--                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">-->
+<!--                    <div class="col-lg-6">-->
+
+
+<!--                        <form action="{{ url_for('home_page') }}" method="post">-->
+<!--                            &lt;!&ndash; Name input&ndash;&gt;-->
+
+<!--                            <div class="form-floating mb-3">-->
+<!--                                <input id="name" name="name" type="text" placeholder="Enter your name..." />-->
+<!--                                <label for="name">Full name</label>-->
+<!--                                <div class="invalid-feedback" >A name is required.</div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; Email address input&ndash;&gt;-->
+<!--                            <div class="form-floating mb-3">-->
+<!--                                <input id="email" name="email" type="email" placeholder="name@example.com" />-->
+<!--                                <label for="email">Email address</label>-->
+<!--                                <div class="invalid-feedback" >An email is required.</div>-->
+<!--                                <div class="invalid-feedback" >Email is not valid.</div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; Phone number input&ndash;&gt;-->
+<!--                            <div class="form-floating mb-3">-->
+<!--                                <input name="phone" id="phone" type="tel" placeholder="(123) 456-7890" />-->
+<!--                                <label for="phone">Phone number</label>-->
+<!--                                <div class="invalid-feedback" >A phone number is required.</div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; Message input&ndash;&gt;-->
+<!--                            <div class="form-floating mb-3">-->
+<!--                                <textarea name="message" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" ></textarea>-->
+<!--                                <label for="message">Message</label>-->
+<!--                                <div class="invalid-feedback" >A message is required.</div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; Submit success message&ndash;&gt;-->
+<!--                            &lt;!&ndash;&ndash;&gt;-->
+<!--                            &lt;!&ndash; This is what your users will see when the form&ndash;&gt;-->
+<!--                            &lt;!&ndash; has successfully submitted&ndash;&gt;-->
+<!--                            <div class="d-none" id="submitSuccessMessage">-->
+<!--                                <div class="text-center mb-3">-->
+<!--                                    <div class="fw-bolder">Form submission successful!</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; Submit error message&ndash;&gt;-->
+<!--                            &lt;!&ndash;&ndash;&gt;-->
+<!--                            &lt;!&ndash; This is what your users will see when there is&ndash;&gt;-->
+<!--                            &lt;!&ndash; an error submitting the form&ndash;&gt;-->
+<!--                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>-->
+<!--                            &lt;!&ndash; Submit Button&ndash;&gt;-->
+<!--                            <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit">Submit</button></div>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            -->
+<!--            -->
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <i class="bi bi-geo-alt fs-2 mb-3 text-muted" style="color: black;"></i>
+                        <h4>Address</h4>
+                        <h5>550 California Rd Ste 2<br>Quakertown, PA 18036<br>USA</h5>
+                    </div>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                        <h4>Phone</h4>
+                        <div>+1 (215) 538-7055</div>
+                    </div>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <i class="bi bi-envelope fs-2 mb-3 text-muted"></i>
+                        <h4>Email</h4>
+                        <div>manufacturing@panel-tech.com</div>
+                    </div>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <i class="bi bi-instagram fs-2 mb-3 text-muted" style="color: black;"></i>
+                        <h4>Instagram</h4>
+                        <h5><a href="#">Panel-Tech on IG</a></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2024 Panel Technologies Inc.</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="static/js/scripts.js"></script>
+    </body>
+</html>
