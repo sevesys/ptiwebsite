@@ -42,8 +42,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 32, 117, 86;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-rgb: 128, 140, 150;
+  --bs-secondary-rgb: 255, 255, 255;
   --bs-third-rgb: 200, 202, 207;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -10886,13 +10886,13 @@ hr.divider-light {
 }
 #mainNav .navbar-brand {
   font-family: "Titillium Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
   font-family: "Titillium Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.25rem;
   padding: 0.75rem 0;
 }
@@ -11017,6 +11017,7 @@ header.masthead h1, header.masthead .h1 {
     right: 0;
     bottom: 0;
     z-index: -1;
+    filter: contrast(60%);
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -11126,4 +11127,30 @@ ul {
 .bodyimage {
     width: 100%;
     height: auto;
+}
+
+#about {
+    background-image: url("../assets/img2/vpx720_midsize.jpg");
+    background-size: cover;
+}
+
+#customer-service {
+    background-image: url("../assets/img2/epbox_midsize.jpg");
+    background-size: cover;
+}
+
+#lifecycle {
+    background-image: url("../assets/img2/_IGP9877.JPG");
+    background-size: cover;
+}
+
+#capabilities {
+    background-image: url("../assets/img2/_IGP9882_mid.JPG");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#products {
+    background-image: url("../assets/img2/_IGP9869_midsize.JPG");
+    background-size: cover;
 }
