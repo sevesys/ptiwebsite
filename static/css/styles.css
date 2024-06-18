@@ -11201,3 +11201,23 @@ ul {
 .width-100 {
     width: 100%;
 }
+
+.width-80 {
+    width: 80%;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.navicon {
+    margin-right: 1rem;
+}
+
+.float-right {
+    float: right;
+}
+.justify-right {
+    justify-content:right;
+}
