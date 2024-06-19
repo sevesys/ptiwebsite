@@ -43,6 +43,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 35, 94, 61, 0.5;
+  --bs-primary-rgb-2: 35, 94, 61;
   --bs-secondary-rgb: 255, 255, 255;
   --bs-third-rgb: 200, 202, 207;
   --bs-success-rgb: 25, 135, 84;
@@ -79,6 +80,7 @@
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
   --bs-green-tint-rgba: 35, 94, 61, 0.5;
+  --bs-green-tint-rgb: 35, 94, 61;
 }
 
 *,
@@ -10883,7 +10885,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: rgba(var(--bs-primary-rgb));
+  background-color: #47735B;
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -10907,7 +10909,7 @@ hr.divider-light {
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
-    background-color: rgba(var(--bs-primary-rgb));
+    background-color: #47735B;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.8);
@@ -10997,7 +10999,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(var(--bs-green-tint-rgba));
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11143,12 +11145,12 @@ ul {
 }
 
 #customer-service {
-    background-image: url("../assets/img2/epbox_midsize.jpg");
+    /*background-image: url("../assets/img2/epbox_midsize.jpg");*/
     background-size: cover;
 }
 
 #lifecycle {
-    background-image: url("../assets/img2/_IGP9877.JPG");
+    background-image: url("../assets/img2/_IGP9888midsize.JPG");
     background-size: cover;
 }
 
@@ -11158,8 +11160,8 @@ ul {
     background-blend-mode: multiply;
 }
 
-#products {
-    background-image: url("../assets/img2/_IGP9869_midsize.JPG");
+#portfolio {
+    background-color: rgb(130, 136, 140);
     background-size: cover;
 }
 
@@ -11220,4 +11222,20 @@ ul {
 }
 .justify-right {
     justify-content:right;
+}
+
+.video-parent-relative-position {
+    position:relative;
+}
+
+.product-highlight-spacing {
+
+}
+
+#contact {
+    background-color: #47735B;
+}
+
+.map-center {
+    text-align: center;
 }
