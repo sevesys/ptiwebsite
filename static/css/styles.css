@@ -3740,7 +3740,7 @@ textarea.form-control-lg {
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.0rem;
   --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 2rem;
+  --bs-navbar-brand-font-size: 1.75rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
@@ -11277,4 +11277,8 @@ ul {
 
 .hero-font {
     font-family: Neuropolitic !important;
+}
+
+.not-100-width {
+    width: unset !important;
 }
